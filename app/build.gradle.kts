@@ -13,8 +13,9 @@ android {
         targetSdk = 33
         versionCode = 1
         versionName = "1.0"
-
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
+        // Needed to use support vector drawable in older versions of android, all the way back to API level 7
+        vectorDrawables.useSupportLibrary = true
     }
 
     buildTypes {
